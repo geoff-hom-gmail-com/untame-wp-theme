@@ -124,6 +124,19 @@ a img {
 /*--------------------------------------------------------------
 2.0 Typography
 --------------------------------------------------------------*/
+@font-face {
+    	font-family: Gotham;
+	src:url('fonts/gotham-xlight.otf');
+/* If font isn't working, may need to add browser-specific options below?
+	src:url('fonts/gotham-xlight.eot');
+    	src:url('fonts/gotham-xlight.eot?#iefix') format('embedded-opentype'),
+        	url('fonts/gotham-xlight.woff') format('woff'),
+        	url('fonts/gotham-xlight.ttf') format('truetype'),
+        	url('fonts/gotham-xlight.svg#font-name') format('svg');
+	font-weight: normal;
+	font-style: normal;
+*/
+}
 body,
 button,
 input,
@@ -207,6 +220,10 @@ footer {
 	margin: 0 auto;
 	margin-bottom: 10px;
 	text-align: center;
+}
+.main-navigation {
+    	font-family: Gotham;
+	font-size: 36px;
 }
 
 /*--------------------------------------------------------------
@@ -397,17 +414,20 @@ a:focus {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
 }
 .main-navigation ul {
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
 	padding-left: 0;
+	width: fit-content;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
 }
 .main-navigation li {
 	float: left;
 	position: relative;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 .main-navigation a {
 	display: block;
@@ -481,12 +501,11 @@ a:focus {
 .site-header {
 	position: relative;
 	top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	background-color: #bbb;	// temp for testing
+	background-color: #bbb;	
 }
-
+li.menu-divider:last-child {
+	display:none;
+}
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
