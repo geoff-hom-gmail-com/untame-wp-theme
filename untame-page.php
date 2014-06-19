@@ -2,12 +2,11 @@
 /*
  * Template Name: Untame1
  */
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-
+		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;
@@ -29,7 +28,6 @@ get_header(); ?>
 	
     		<div class="undertitle">
 	  	<div class="centerbox" id="centerbox">
-
 			<div class="social">  
     				<div class="fb-like" data-href="https://www.facebook.com/untamegames" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
 				</div><!-- .fb-like -->
@@ -45,10 +43,8 @@ get_header(); ?>
 					endif; */
 				?>
 			<?php endwhile; // end of the loop. ?>
-
   		</div> <!-- centerbox -->
 		</div> <!-- undertitle -->
-
 	</main><!-- #main -->
 	</div><!-- #primary -->
 

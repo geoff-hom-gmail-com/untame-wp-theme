@@ -159,7 +159,9 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 p {
+/*
 	margin-bottom: 1.5em;
+*/
 }
 b, strong {
 	font-weight: bold;
@@ -168,10 +170,14 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 blockquote {
+/*
 	margin: 0 1.5em;
+*/
 }
 address {
+/*
 	margin: 0 0 1.5em;
+*/
 }
 pre {
 	background: #eee;
@@ -255,13 +261,17 @@ body {
 	margin-left:15px;
 }
 .social {
-	color:#999;
-	text-align:right;
-	float:right;
-	position:relative;
-	padding:5px;
+	color: #999;
+	text-align: right;
+	float: right;
+	position: relative;
+	padding: 5px;
 }
 /*
+.fb-like {
+	vertical-align: baseline !important;
+}
+*/
 .post {
 	color:#b5b5b5;	
 	padding-top:10px;
@@ -289,7 +299,6 @@ body {
 	color:#000;
 	font-size:16px;
 }
-*/
 .site-footer {
 	font-size: x-small;
 	margin: 10px auto;
@@ -690,11 +699,15 @@ a:focus {
 .page-content,
 .entry-content,
 .entry-summary {
+/*
 	margin: 1.5em 0 0;
+*/
 }
 .page-links {
+/*
 	clear: both;
 	margin: 0 0 1.5em;
+*/
 }
 
 /*--------------------------------------------------------------
