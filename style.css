@@ -503,8 +503,11 @@ a:focus {
 	top: 20px;
 	background-color: #bbb;	
 }
+li.menu-divider:hover {
+	cursor: default;
+}
 li.menu-divider:last-child {
-	display:none;
+	display: none;
 }
 /*--------------------------------------------------------------
 6.0 Accessibility
