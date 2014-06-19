@@ -146,7 +146,7 @@ textarea {
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
-	line-height: 1.5;
+	line-height: normal;
 }
 textarea {
 	background: #444;
@@ -159,9 +159,10 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 p {
-/*
-	margin-bottom: 1.5em;
-*/
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 b, strong {
 	font-weight: bold;
@@ -170,14 +171,10 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 blockquote {
-/*
 	margin: 0 1.5em;
-*/
 }
 address {
-/*
 	margin: 0 0 1.5em;
-*/
 }
 pre {
 	background: #eee;
@@ -223,6 +220,7 @@ big {
 }
 .site-header {
 	margin-top: 20px;
+	margin-bottom: 5px;
 }
 .header-image {
 	display: block;
@@ -267,11 +265,6 @@ body {
 	position: relative;
 	padding: 5px;
 }
-/*
-.fb-like {
-	vertical-align: baseline !important;
-}
-*/
 .post {
 	color:#b5b5b5;	
 	padding-top:10px;
@@ -282,8 +275,8 @@ body {
 	padding:10px;	
 }
 .post_body {
-	padding-left:70px;
-	width:860px;
+	padding-left: 70px;
+	width: 930px;
 }
 .post_title {
 	font-size:32px;
