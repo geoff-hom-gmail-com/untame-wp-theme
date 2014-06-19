@@ -221,9 +221,83 @@ footer {
 	margin-bottom: 10px;
 	text-align: center;
 }
+.site-header {
+	margin-top: 20px;
+}
+.header-image {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
 .main-navigation {
     	font-family: Gotham;
 	font-size: 36px;
+}
+li.menu-divider:hover {
+	cursor: default;
+}
+li.menu-divider:last-child {
+	display: none;
+}
+body {
+	background-color: #000;
+	background-image: url("images/topGradient.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 379px;
+}
+.undertitle {
+	margin-top: 10px;
+/*
+	position: relative;
+*/
+/*
+	position: absolute;
+	top: 220px;
+*/
+	left: -500px;
+	padding-left: 50%;
+}
+.centerbox {
+	color: #CCCCCC;
+	background-color: #1b1a1a;
+	width: 980px; 
+	margin: 0 auto; 
+	margin-bottom:10px;
+	margin-left:15px;
+}
+.social {
+	color:#999;
+	text-align:right;
+	float:right;
+	position:relative;
+	padding:5px;
+}
+.post {
+	color:#b5b5b5;	
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.plain_post {
+	color:#b5b5b5;
+	padding:10px;	
+}
+.post_body {
+	padding-left:70px;
+	width:860px;
+}
+.post_title {
+	font-size:32px;
+}
+.post_subtitle {
+	font-size:20px;
+	font-weight:bold;
+}
+.post_datebox {
+	position: relative;
+	left: -10px;
+	top:4px;
+	color:#000;
+	font-size:16px;
 }
 
 /*--------------------------------------------------------------
@@ -498,17 +572,7 @@ a:focus {
 	text-align: right;
 	width: 50%;
 }
-.site-header {
-	position: relative;
-	top: 20px;
-	background-color: #bbb;	
-}
-li.menu-divider:hover {
-	cursor: default;
-}
-li.menu-divider:last-child {
-	display: none;
-}
+
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -681,17 +745,6 @@ embed,
 iframe,
 object {
 	max-width: 100%;
-}
-body {
-	background-color: #000;
-	background-image: url("images/topGradient.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 379px;
-}
-.header-image {
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
 }
 
 /*--------------------------------------------------------------
