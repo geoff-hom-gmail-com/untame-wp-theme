@@ -31,20 +31,18 @@ get_header(); ?>
 	  	<div class="centerbox" id="centerbox">
 
 			<div class="social">  
-    			<div class="fb-like" data-href="https://www.facebook.com/untamegames" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
-			</div><!-- .fb-like -->
-		
-    			<a href="https://twitter.com/untamegames" class="twitter-follow-button" data-show-count="false">Follow @untamegames</a>
-		
+    				<div class="fb-like" data-href="https://www.facebook.com/untamegames" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
+				</div><!-- .fb-like -->
+    				<a href="https://twitter.com/untamegames" class="twitter-follow-button" data-show-count="false">Follow @untamegames</a>
 			</div><!-- .social -->
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
-				<?php
+				<?php /*
 				// If comments are open or we have at least one comment, load up the comment template
 					if ( comments_open() || '0' != get_comments_number() ) :
 						comments_template();
-					endif;
+					endif; */
 				?>
 			<?php endwhile; // end of the loop. ?>
 
