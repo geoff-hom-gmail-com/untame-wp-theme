@@ -265,7 +265,7 @@ body {
 	position: relative;
 	padding: 5px;
 }
-.post {
+.pagie, .post {
 	color:#b5b5b5;	
 	padding-top:10px;
 	padding-bottom:10px;
@@ -274,14 +274,14 @@ body {
 	color:#b5b5b5;
 	padding:10px;	
 }
-.post_body {
+.pagie_body, .post_body {
 	padding-left: 70px;
 	width: 930px;
 }
-.post_title {
+.pagie_title, .post_title {
 	font-size:32px;
 }
-.post_subtitle {
+.pagie_subtitle, .post_subtitle {
 	font-size:20px;
 	font-weight:bold;
 }
