@@ -276,7 +276,7 @@ body {
 	position: relative;
 	padding: 5px;
 }
-.pagie, .post {
+.pagie, .postie {
 	color:#b5b5b5;	
 	padding-top:10px;
 	padding-bottom:10px;
@@ -290,18 +290,18 @@ body {
 	width: 930px;
 }
 .pagie_title, .post_title {
-	font-size:32px;
+	font-size: 32px;
 }
 .pagie_subtitle, .post_subtitle {
-	font-size:20px;
-	font-weight:bold;
+	font-size: 20px;
+	font-weight: bold;
 }
 .post_datebox {
-	position: relative;
+	color: #000;
+	font-size: 16px;
 	left: -10px;
-	top:4px;
-	color:#000;
-	font-size:16px;
+	position: relative;
+	top: 4px;
 }
 .site-footer {
 	font-size: x-small;
@@ -312,6 +312,13 @@ body {
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
+div.date_text {
+	left: 0px;
+	position: absolute;
+	text-align: center;
+	top: 4px;
+	width: 68px;
+}
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -341,6 +348,11 @@ dd {
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+}
+img.date_ribbon {
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 figure {
 	margin: 0;
