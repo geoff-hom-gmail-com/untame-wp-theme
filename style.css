@@ -265,9 +265,9 @@ body {
 .centerbox {
 	color: #CCCCCC;
 	background-color: #1b1a1a;
-	width: 980px; 
 	margin: 0 auto; 
-	margin-left:15px;
+	margin-left: 15px;
+	width: 965px;
 }
 .social {
 	color: #999;
