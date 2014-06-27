@@ -242,12 +242,6 @@ big {
     	font-family: Gotham;
 	font-size: 36px;
 }
-li.menu-divider:hover {
-	cursor: default;
-}
-li.menu-divider:last-child {
-	display: none;
-}
 body {
 	background-color: #000;
 	background-image: url("images/topGradient.jpg");
@@ -508,13 +502,17 @@ a:focus {
 	padding-left: 0;
 	width: fit-content;
 	width: -webkit-fit-content;
-	width: -moz-fit-content;
+	width: -moz-fit-content;	
 }
 .main-navigation li {
+	border-right: solid 1px #5e6587;
 	float: left;
+	padding: 8px 18px;
 	position: relative;
-	padding-left: 8px;
-	padding-right: 8px;
+}
+.main-navigation li:last-child {
+	border-right: none;
+	padding-right: 0px;
 }
 .main-navigation a {
 	display: block;
@@ -524,18 +522,26 @@ a:focus {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
-	top: 1.5em;
 	left: -999em;
 	z-index: 99999;
+	background: #000;
+	top: 1.5em;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-left: -18px;
+	white-space: nowrap;
 }
 .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
 }
 .main-navigation ul ul a {
-	width: 200px;
+	display: block;
+	padding: 8px 18px;
 }
 .main-navigation ul ul li {
+	border: none;
+	padding: 0;
 }
 .main-navigation li:hover > a {
 }
