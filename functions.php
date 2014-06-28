@@ -132,3 +132,11 @@ require get_template_directory() . '/inc/jetpack.php';
 // Stop WP from adding <p> tags around comments.
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
+
+// Return parent's slug.
+function the_parent_slug() {
+  global $post;
+  if($post->post_parent == 0) return '';
+  $post_data = get_post($post->post_parent);
+  return $post_data->post_name;
+}
