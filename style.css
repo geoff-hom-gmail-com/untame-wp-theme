@@ -352,10 +352,19 @@ figure {
 	margin: 0;
 }
 table {
-/*
-	margin: 0 0 1.5em;
-	width: 100%;
-*/
+}
+.small-logos tr, td {
+	vertical-align: middle;
+}
+.small-logos img {
+	border: 0;
+	height: 46px;
+}
+#google-play {
+	margin-top: 5px;
+}
+#amazon {
+	margin-top: 10px;
 }
 th {
 	font-weight: bold;
